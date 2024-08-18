@@ -3,3 +3,11 @@
     height: 600px;
     border: 1px solid #ddd;
 }
+
+.consola{
+    width: 710px;
+    height: 300px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}

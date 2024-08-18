@@ -9,7 +9,7 @@
 </head>
 <body>
     <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" style="margin-bottom:30px; ">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">OLC2</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
@@ -36,13 +36,24 @@
                 </div>
             </div>
         </nav>
+
+        <div class="editor row justify-content-md-center"  style="border-radius:15px ; margin-top: 10px;">
+            <div class="col-lg-8 editor" id="editor" >
+                <!-- seccion para mMonaco editor -->
+            </div>
+        </div>
+        <div class="tituloConsola" style="margin-top: 15px; color: rgb(60, 60, 70); font-weight: bolder;">
+            <p>Salida:</p>
+        </div>
+        
+        <div >
+            <textarea class="consola"></textarea>
+        </div>
+
+   
     </div>
 
-    <div class="editor row justify-content-md-center">
-        <div class="col-lg-8 editor" id="editor" >
-            <!-- seccion para mMonaco -->
-        </div>
-    </div>
+
 
     <!-- Cargar primero las dependencias de Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
