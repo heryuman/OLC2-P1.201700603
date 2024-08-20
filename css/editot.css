@@ -5,8 +5,8 @@
 }
 
 .consola{
-    width: 710px;
-    height: 300px;
+    width: auto;
+    height: 710px;
     border: 1px solid #ddd;
     border-radius: 10px;
     margin-bottom: 50px;
