@@ -22,6 +22,7 @@ termino
     = flotante
     / entero
     / char
+    / cadena
     / "false"
     / "true"
 
@@ -34,8 +35,15 @@ flotante
 char
 	="'"char:[a-zA-Z]"'" {return char;} 
 
+cadena
+    = _ "\""cadena:[a-zA-Z0-9_ ]*"\"" _ {return cadena;}
 identificador
     = [a-zA-Z_][a-zA-Z0-9_]* {return text();}
 
+comentario_linea
+	= "//" [^\n]*
+
+comentario_multilinea
+    = "/*" (!"*/" .)* "*/"
 _  // Regla para omitir espacios en blanco y saltos de línea
-    = [ \t\n\r]*
+    = ([ \t\n\r] /comentario_linea/comentario_multilinea)*
